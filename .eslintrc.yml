@@ -1,0 +1,39 @@
+---
+extends: airbnb-base
+rules:
+  import/no-named-as-default: off
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      functions: never
+  no-underscore-dangle:
+    - error
+    - allow:
+      - _id
+      allowAfterThis: true
+      allowAfterSuper: true
+  no-confusing-arrow: warn
+  class-methods-use-this: off
+  global-require: off
+  valid-jsdoc: error
+  complexity: [warn, 5]
+  max-nested-callbacks: [error, 2]
+  max-depth: [error, 3]
+  max-classes-per-file: [error, 1]
+  no-else-return: error
+  max-params: [error, 7]
+  function-paren-newline: [error, multiline]
+  consistent-return: error
+  no-plusplus: off
+overrides:
+  - files: ["*.test.js", "*.spec.js"]
+    env:
+      mocha: true
+    rules:
+      no-unused-expressions: off
+      max-nested-callbacks: [error, 5]
+      max-depth: [error, 6]
+      no-underscore-dangle: off

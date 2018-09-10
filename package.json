@@ -1,0 +1,45 @@
+{
+  "name": "droplr-api",
+  "version": "1.0.0",
+  "description": "Official Droplr API Client for Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test/unit --coverage",
+    "test:ci": "jest test/unit --coverage --maxWorkers=2",
+    "test:functional": "jest test/functional",
+    "lint": "eslint . --cache",
+    "lint:ci": "eslint .",
+    "lint:fix": "eslint . --cache --fix"
+  },
+  "author": "Droplr, Inc.",
+  "license": "MIT",
+  "contributors": [
+    "Antoni Orfin <antoni@droplr.com> (https://github.com/orfin)"
+  ],
+  "bugs": {
+    "url": "https://github.com/Droplr/droplr-js/issues"
+  },
+  "homepage": "https://github.com/Droplr/droplr-js",
+  "keywords": [
+    "droplr",
+    "api",
+    "client",
+    "droplr api",
+    "sdk",
+    "node",
+    "browser"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.5",
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^23.1.0",
+    "sinon": "^5.1.0",
+    "sinon-chai": "^3.1.0"
+  }
+}
