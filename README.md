@@ -9,25 +9,25 @@ Official Droplr API client for Javascript. It works both on frontend & backend u
 ## Installation
 
 ```
-yarn add droplr-api
+$ yarn add droplr-api
 ```
 
 ## Testing
 
 ```
-yarn install
-yarn test
+$ yarn install
+$ yarn test
 ```
 
 You can also run functional tests (invoking real API) using your Droplr credentials:
 
 ```
-USERNAME=my@email.com PASSWORD=MyPassword yarn test:functional
+$ USERNAME=my@email.com PASSWORD=MyPassword yarn test:functional
 ```
 
 ## Usage
 
-```
+```javascript
 const Droplr = require('droplr-api');
 
 const client = new Droplr.Client({
@@ -58,49 +58,49 @@ const noteDrop = await client.drops.create({
 
 When creating Droplr.Client, you can optionally specify _auth_ class:
 
-* new Droplr.AnonymousAuth(); (default)
-* new Droplr.BasicAuth('username', 'password');
-* new Droplr.JwtAuth('jwttoken');
+* `new Droplr.AnonymousAuth(); (default)`
+* `new Droplr.BasicAuth('username', 'password');`
+* `new Droplr.JwtAuth('jwttoken');`
 
 ## Actions
 
-* **client.drops**
-  * client.drops.get(id, params = {}, options = {})
-  * client.drops.list(params = {}, options = {})
-  * client.drops.create(data, options = {})
-  * client.drops.update(id, data, options = {})
-  * client.drops.delete(id, options = {})
-  * client.drops.getStats(id, options = {})
-  * client.drops.getReferrers(id, options = {})
-  * client.drops.view(id, options = {})
-  * client.drops.listHits(id, params = {}, options = {})
+* **`client.drops`**
+  * `client.drops.get(id, params = {}, options = {})`
+  * `client.drops.list(params = {}, options = {})`
+  * `client.drops.create(data, options = {})`
+  * `client.drops.update(id, data, options = {})`
+  * `client.drops.delete(id, options = {})`
+  * `client.drops.getStats(id, options = {})`
+  * `client.drops.getReferrers(id, options = {})`
+  * `client.drops.view(id, options = {})`
+  * `client.drops.listHits(id, params = {}, options = {})`
 
 
-* **client.users**
-  * client.users.current(params = {}, options = {})
-  * client.users.get(id, options = {})
-  * client.users.list(params = {}, options = {})
-  * client.users.create(data, options = {})
-  * client.users.update(id, data, options = {})
-  * client.users.delete(id, options = {})
-  * client.users.getTags(id, options = {})
+* **`client.users`**
+  * `client.users.current(params = {}, options = {})`
+  * `client.users.get(id, options = {})`
+  * `client.users.list(params = {}, options = {})`
+  * `client.users.create(data, options = {})`
+  * `client.users.update(id, data, options = {})`
+  * `client.users.delete(id, options = {})`
+  * `client.users.getTags(id, options = {})`
 
 
-* **client.boards**
-  * client.boards.get(id, options = {})
-  * client.boards.list(params = {}, options = {})
-  * client.boards.create(data, options = {})
-  * client.boards.update(id, data, options = {})
-  * client.boards.delete(id, options = {})
-  * client.boards.watch(id, options = {})
+* **`client.boards`**
+  * `client.boards.get(id, options = {})`
+  * `client.boards.list(params = {}, options = {})`
+  * `client.boards.create(data, options = {})`
+  * `client.boards.update(id, data, options = {})`
+  * `client.boards.delete(id, options = {})`
+  * `client.boards.watch(id, options = {})`
 
 
-* **client.teams**
-  * client.teams.get(id, options = {})
-  * client.teams.list(params = {}, options = {})
-  * client.teams.create(data, options = {})
-  * client.teams.update(id, data, options = {})
-  * client.teams.delete(id, options = {})
+* **`client.teams`**
+  * `client.teams.get(id, options = {})`
+  * `client.teams.list(params = {}, options = {})`
+  * `client.teams.create(data, options = {})`
+  * `client.teams.update(id, data, options = {})`
+  * `client.teams.delete(id, options = {})`
 
-* **client.rootRedirect**
-  * client.rootRedirect.get(params, options = {})
+* **`client.rootRedirect`**
+  * `client.rootRedirect.get(params, options = {})`
