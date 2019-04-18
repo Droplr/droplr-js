@@ -9,20 +9,20 @@ Official Droplr API client for Javascript. It works both on frontend & backend u
 ## Installation
 
 ```
-$ yarn add droplr-api
+$ npm install --save droplr-api
 ```
 
 ## Testing
 
 ```
-$ yarn install
-$ yarn test
+$ npm install
+$ npm run test
 ```
 
 You can also run functional tests (invoking real API) using your Droplr credentials:
 
 ```
-$ USERNAME=my@email.com PASSWORD=MyPassword yarn test:functional
+$ USERNAME=my@email.com PASSWORD=MyPassword npm run test:functional
 ```
 
 ## Usage
