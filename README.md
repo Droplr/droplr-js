@@ -16,7 +16,7 @@ $ npm install --save droplr-api
 
 ```
 $ npm install
-$ npm run test
+$ npm test
 ```
 
 You can also run functional tests (invoking real API) using your Droplr credentials:
