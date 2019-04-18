@@ -15,7 +15,7 @@ jobs:
           - v1-modules-{{ checksum "package.json" }}
           - v1-modules-
 
-      - run: yarn install --frozen-lockfile
+      - run: npm i
 
       - save_cache:
           paths:
@@ -34,7 +34,7 @@ jobs:
           at: ~/droplr-js
       - run:
           name: Unit Tests
-          command: yarn test:ci
+          command: npm run test:ci
 
       - store_artifacts:
           path: ~/droplr-js/coverage
@@ -46,7 +46,7 @@ jobs:
           at: ~/droplr-js
       - run:
           name: Linter
-          command: yarn lint:ci
+          command: npm run lint:ci
 
 workflows:
   version: 2
