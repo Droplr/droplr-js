@@ -53,6 +53,14 @@ const noteDrop = await client.drops.create({
   content: 'My note',
 });
 ```
+Droplr Client uses Axios for HTTP requests. You can pass Axios options while initializing the client.
+Example:
+```
+const client = new Droplr.Client({
+  auth: new Droplr.BasicAuth('username', 'password'),
+  maxContentLength: 500 * 1024 * 1024 * 1024, // maxBodyLength limit
+});
+```
 
 ## Authorization Methods
 
