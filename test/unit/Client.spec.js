@@ -28,7 +28,6 @@ describe('Client', () => {
 
       expect(client.options.baseUrl).eql('https://api.droplr.com');
       expect(client.options.auth).instanceOf(AnonymousAuth);
-      expect(client.options.requestDefaults).eql({});
       expect(client.boards).instanceOf(Boards);
       expect(client.drops).instanceOf(Drops);
       expect(client.teams).instanceOf(Teams);
@@ -48,11 +47,7 @@ describe('Client', () => {
         },
       };
 
-      console.log('starting options', options);
-      
       const client = new Client(options);
-      
-      console.log('end options', client.options);
       expect(client.options).eql(options);
     });
   });
