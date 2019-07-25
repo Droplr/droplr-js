@@ -53,7 +53,7 @@ const noteDrop = await client.drops.create({
   content: 'My note',
 });
 ```
-Droplr Client uses Axios for HTTP requests. You can pass Axios options while initializing the client.
+Droplr Client uses [Axios](https://github.com/axios/axios "Axios homepage") for HTTP requests. You can pass [Axios options](https://github.com/axios/axios#axiosoptionsurl-config "Axios options documentation page") while initializing the client.
 Example:
 ```
 const client = new Droplr.Client({
