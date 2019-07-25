@@ -48,8 +48,11 @@ describe('Client', () => {
         },
       };
 
+      console.log('starting options', options);
+      
       const client = new Client(options);
-
+      
+      console.log('end options', client.options);
       expect(client.options).eql(options);
     });
   });
