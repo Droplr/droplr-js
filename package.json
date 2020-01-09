@@ -1,6 +1,6 @@
 {
   "name": "droplr-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Droplr API Client for Javascript",
   "main": "index.js",
   "scripts": {
