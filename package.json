@@ -1,6 +1,6 @@
 {
   "name": "droplr-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Droplr API Client for Javascript",
   "main": "index.js",
   "scripts": {
@@ -30,9 +30,9 @@
     "browser"
   ],
   "dependencies": {
-    "axios": "0.18.0",
-    "lodash": "4.17.10",
-    "chai": "4.1.2"
+    "axios": "0.21.1",
+    "chai": "4.1.2",
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "eslint": "^5.4.0",
