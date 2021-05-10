@@ -32,7 +32,7 @@
   "dependencies": {
     "axios": "0.21.1",
     "chai": "4.1.2",
-    "lodash": "4.17.19"
+    "lodash": "4.17.21"
   },
   "devDependencies": {
     "eslint": "^5.4.0",
