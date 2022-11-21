@@ -7,6 +7,11 @@ export default class Drops extends AbstractResource {
 	public _post: any;
 	public _get: any;
 	public _list: any;
+  public _x_drop_password: any;
+  public _content_disposition: any;
+  public _board: any;
+  public _filename: any;
+  public _pixel_density: any;
 
   constructor(client: any) {
     super(client);
@@ -16,8 +21,8 @@ export default class Drops extends AbstractResource {
   get(id: any, params?: any, options?: any) {
     const localOptions = {
       headers: {
-        'x-drop-password': null,
-        'content-disposition': null,
+        'x-drop-password': this._x_drop_password,
+        'content-disposition': this._content_disposition,
       },
     };
 
@@ -46,9 +51,9 @@ export default class Drops extends AbstractResource {
         'content-type': data.variant,
       },
       params: {
-        board: null,
-        filename: null,
-        pixel_density: null,
+        board: this._board,
+        filename: this._filename,
+        pixel_density: this._pixel_density,
       },
     };
 
