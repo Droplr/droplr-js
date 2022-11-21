@@ -39,7 +39,7 @@
     "@types/jest": "^29.2.3",
     "@types/lodash": "^4.14.189",
     "@types/mocha": "^10.0.0",
-    "eslint": "8.28.0",
+    "eslint": "8.22.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
     "jest": "^29.0.0",
