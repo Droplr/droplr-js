@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-  entry: "./src/index.ts",
+  entry: "./index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -36,6 +36,18 @@ const config = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    fallback: {
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "http": require.resolve("stream-http"),
+      "https": false,
+      "zlib": require.resolve("browserify-zlib") ,
+      "path": require.resolve("path-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "util": require.resolve("util/"),
+      "assert": require.resolve("assert/"),
+    }
   },
 };
 

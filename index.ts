@@ -4,7 +4,7 @@ import BasicAuth from './lib/auth/BasicAuth';
 import JwtAuth from './lib/auth/JwtAuth';
 import AnonymousAuth from './lib/auth/AnonymousAuth';
 
-export default {
+export {
   Client,
   BasicAuth,
   JwtAuth,
