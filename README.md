@@ -75,42 +75,42 @@ When creating Droplr.Client, you can optionally specify _auth_ class:
 ## Actions
 
 * **`client.drops`**
-  * `client.drops.get(id, params = {}, options = {})`
-  * `client.drops.list(params = {}, options = {})`
-  * `client.drops.create(data, options = {})`
-  * `client.drops.update(id, data, options = {})`
-  * `client.drops.delete(id, options = {})`
-  * `client.drops.getStats(id, options = {})`
-  * `client.drops.getReferrers(id, options = {})`
-  * `client.drops.view(id, options = {})`
-  * `client.drops.listHits(id, params = {}, options = {})`
+  * `client.drops.get(id, params?: any, options?: any)`
+  * `client.drops.list(params?: any, options?: any)`
+  * `client.drops.create(data, options?: any)`
+  * `client.drops.update(id, data, options?: any)`
+  * `client.drops.delete(id, options?: any)`
+  * `client.drops.getStats(id, options?: any)`
+  * `client.drops.getReferrers(id, options?: any)`
+  * `client.drops.view(id, options?: any)`
+  * `client.drops.listHits(id, params?: any, options?: any)`
 
 
 * **`client.users`**
-  * `client.users.current(params = {}, options = {})`
-  * `client.users.get(id, options = {})`
-  * `client.users.list(params = {}, options = {})`
-  * `client.users.create(data, options = {})`
-  * `client.users.update(id, data, options = {})`
-  * `client.users.delete(id, options = {})`
-  * `client.users.getTags(id, options = {})`
+  * `client.users.current(params?: any, options?: any)`
+  * `client.users.get(id, options?: any)`
+  * `client.users.list(params?: any, options?: any)`
+  * `client.users.create(data, options?: any)`
+  * `client.users.update(id, data, options?: any)`
+  * `client.users.delete(id, options?: any)`
+  * `client.users.getTags(id, options?: any)`
 
 
 * **`client.boards`**
-  * `client.boards.get(id, options = {})`
-  * `client.boards.list(params = {}, options = {})`
-  * `client.boards.create(data, options = {})`
-  * `client.boards.update(id, data, options = {})`
-  * `client.boards.delete(id, options = {})`
-  * `client.boards.watch(id, options = {})`
+  * `client.boards.get(id, options?: any)`
+  * `client.boards.list(params?: any, options?: any)`
+  * `client.boards.create(data, options?: any)`
+  * `client.boards.update(id, data, options?: any)`
+  * `client.boards.delete(id, options?: any)`
+  * `client.boards.watch(id, options?: any)`
 
 
 * **`client.teams`**
-  * `client.teams.get(id, options = {})`
-  * `client.teams.list(params = {}, options = {})`
-  * `client.teams.create(data, options = {})`
-  * `client.teams.update(id, data, options = {})`
-  * `client.teams.delete(id, options = {})`
+  * `client.teams.get(id, options?: any)`
+  * `client.teams.list(params?: any, options?: any)`
+  * `client.teams.create(data, options?: any)`
+  * `client.teams.update(id, data, options?: any)`
+  * `client.teams.delete(id, options?: any)`
 
 * **`client.rootRedirect`**
-  * `client.rootRedirect.get(params, options = {})`
+  * `client.rootRedirect.get(params, options?: any)`
